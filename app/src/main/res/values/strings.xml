@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Crousell News- Amol Pardeshi</string>
+    <string name="subtitle_demo">Hi rita12399, thank you for being awesome on Carousell! We want more Carousellers see you and your listings and hope you can keep up the good listings and bring good experience to fellow Carousellers.</string>
+    <string name="demo_title_text">Congrats! You are featured on Home page as a recommended seller!</string>
+    <string name="two_days_ago">2 Days Ago</string>
+    <string name="carousell_news">Carousell News</string>
+    <string name="recent">Recent</string>
+    <string name="popular">Popular</string>
+    <string name="x_days_ago">%1$d days ago</string>
+    <string name="x_hours_ago">%1$d hours ago</string>
+    <string name="x_minutes_ago">%1$d minutes ago</string>
+    <string name="x_weeks_ago">%1$d weeks ago</string>
+    <string name="x_months_ago">%1$d months ago</string>
+    <string name="x_years_ago">%1$d years ago</string>
+    <string name="x_hour_ago">%1$d hour ago</string>
+    <string name="x_minute_ago">%1$d minute ago</string>
+    <string name="x_day_ago">%1$d day ago</string>
+    <string name="x_week_ago">%1$d week ago</string>
+    <string name="x_month_ago">%1$d month ago</string>
+    <string name="x_year_ago">%1$d year ago</string>
+    <string name="recently">recently posted</string>
 </resources>

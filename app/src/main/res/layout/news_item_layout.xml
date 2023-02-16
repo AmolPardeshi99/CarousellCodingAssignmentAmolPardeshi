@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_8"
+    android:elevation="@dimen/dp_2"
+    android:theme="@style/Platform.MaterialComponents.Light"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:strokeColor="@color/grey_text_color"
+    app:strokeWidth="@dimen/dp_1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgThumbNail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtHeadLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:lineSpacingExtra="@dimen/dp_2"
+            android:maxLines="2"
+            android:textColor="@color/headline_text_color"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgThumbNail"
+            tools:text="@string/demo_title_text" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSubHeadLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_4"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dp_1"
+            android:maxLines="2"
+            android:textColor="@color/headline_text_color"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtHeadLine"
+            tools:text="@string/subtitle_demo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPostTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:textColor="@color/time_text_grey_color"
+            app:fontFamily="@font/roboto_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubHeadLine"
+            tools:text="@string/two_days_ago" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
