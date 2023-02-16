@@ -1,7 +1,5 @@
 package com.example.amolpardeshi_standardarchitecuture.repo
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.example.amolpardeshi_standardarchitecuture.model.NewsResponseDto
 import com.example.amolpardeshi_standardarchitecuture.network.NewsApi
 import javax.inject.Inject

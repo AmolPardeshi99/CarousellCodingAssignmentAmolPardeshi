@@ -7,8 +7,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.amolpardeshi_standardarchitecuture.databinding.NewsItemLayoutBinding
 import com.example.amolpardeshi_standardarchitecuture.model.NewsResponseDto
-import com.example.amolpardeshi_standardarchitecuture.utils.Utils.stringFromTimestampToCurrentDate
-import com.example.amolpardeshi_standardarchitecuture.utils.Utils.timeAgo
+import com.example.amolpardeshi_standardarchitecuture.utils.Utils.getCustomTimeStringFromTimeStamp
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
@@ -37,7 +36,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
                 Glide.with(itemView)
                     .load(item.bannerUrl)
                     .into(imgThumbNail)
-                txtPostTime.text = item.timeCreated?.toLong()?.let { timeAgo(itemView.context, it) }
+                txtPostTime.text = item.timeCreated?.toLong()?.let { getCustomTimeStringFromTimeStamp(itemView.context, it) }
             }
         }
     }
