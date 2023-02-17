@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.amolpardeshi_standardarchitecuture.NewsApp
 import com.example.amolpardeshi_standardarchitecuture.R
 import com.example.amolpardeshi_standardarchitecuture.databinding.ActivityMainBinding
-import com.example.amolpardeshi_standardarchitecuture.viewmodel.MainViewModel
+import com.example.amolpardeshi_standardarchitecuture.viewmodel.NewsViewModel
 import com.example.amolpardeshi_standardarchitecuture.viewmodel.MainViewModelFactory
 import javax.inject.Inject
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var newsAdapter: NewsAdapter
-    private lateinit var mainViewModel: MainViewModel
+    private lateinit var newsViewModel: NewsViewModel
 
     @Inject
     lateinit var viewModelFactory: MainViewModelFactory
@@ -31,8 +31,7 @@ class MainActivity : AppCompatActivity() {
         initUI()
 
         (application as NewsApp).applicationComponent.inject(this)
-        mainViewModel = ViewModelProvider(this, viewModelFactory)[MainViewModel::class.java]
-
+        newsViewModel = ViewModelProvider(this, viewModelFactory)[NewsViewModel::class.java]
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -44,10 +43,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.recent -> {
-                mainViewModel.sortByRecent()
+                newsViewModel.sortByRecent()
             }
             R.id.popular -> {
-                mainViewModel.sortByPopular()
+                newsViewModel.sortByPopular()
             }
             else -> super.onOptionsItemSelected(item)
         }
@@ -75,8 +74,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setObservers() {
-        mainViewModel.getData()
-        mainViewModel.newsLiveData.observe(this) {
+        newsViewModel.getData()
+        newsViewModel.newsLiveData.observe(this) {
             it?.let { data ->
                 newsAdapter.newsDataList = data
                 newsAdapter.notifyDataSetChanged()

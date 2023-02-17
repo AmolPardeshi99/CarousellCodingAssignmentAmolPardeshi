@@ -9,6 +9,6 @@ class MainViewModelFactory @Inject constructor(private val repository: NewsRepos
     ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return MainViewModel(repository) as T
+        return NewsViewModel(repository) as T
     }
 }
