@@ -7,11 +7,6 @@ import javax.inject.Inject
 
 class NewsRepository @Inject constructor(private val apiService : NewsApi):BaseRepository{
 
-    /**
-     * ...check good flow
-     * ...check error flow - throw exception
-     * ...success but data null
-     * **/
     override suspend fun getNewsData(): Resource<List<NewsResponseDto>>? {
         val result = apiService.getNewsList()
         if (result.isSuccessful && result.body()!=null){
