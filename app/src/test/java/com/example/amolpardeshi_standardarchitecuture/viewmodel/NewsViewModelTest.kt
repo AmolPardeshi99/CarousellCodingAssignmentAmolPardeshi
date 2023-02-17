@@ -47,7 +47,7 @@ class NewsViewModelTest {
 
     @Test
     fun `test sortByRecent() method`() {
-        val mockData = getDummyDataList()
+        val mockData = getMockNewsItemData()
         viewModel.newsLiveData.postValue(mockData)
 
         viewModel.sortByRecent()
@@ -57,7 +57,7 @@ class NewsViewModelTest {
 
     @Test
     fun `test sortByPopular() method`() {
-        val mockData = getDummyDataList()
+        val mockData = getMockNewsItemData()
         viewModel.newsLiveData.postValue(mockData)
 
         viewModel.sortByPopular()
@@ -66,7 +66,7 @@ class NewsViewModelTest {
             .onChanged(mockData.sortedWith(compareBy<NewsResponseDto> { it.rank }.thenByDescending { it.timeCreated }))
     }
 
-    fun getDummyDataList() = listOf(
+    private fun getMockNewsItemData() = listOf(
         NewsResponseDto(
             id = "121",
             title = "Carousell is launching its own digital wallet to improve payments for its users",
