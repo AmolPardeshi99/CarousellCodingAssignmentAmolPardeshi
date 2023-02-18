@@ -52,7 +52,8 @@ class NewsViewModelTest {
 
         viewModel.sortByRecent()
 
-        Mockito.verify(newsObserver, times(1)).onChanged(mockData.sortedByDescending { it.timeCreated })
+        Mockito.verify(newsObserver, times(1))
+            .onChanged(mockData.sortedByDescending { it.timeCreated })
     }
 
     @Test
@@ -62,7 +63,7 @@ class NewsViewModelTest {
 
         viewModel.sortByPopular()
 
-        Mockito.verify(newsObserver,times(2))
+        Mockito.verify(newsObserver, times(2))
             .onChanged(mockData.sortedWith(compareBy<NewsResponseDto> { it.rank }.thenByDescending { it.timeCreated }))
     }
 
