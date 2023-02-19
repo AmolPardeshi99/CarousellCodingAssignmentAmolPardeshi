@@ -48,7 +48,7 @@ class NewsViewModelTest {
     @Test
     fun `test sortByRecent() method`() {
         val mockData = getMockNewsItemData()
-        viewModel.newsLiveData.postValue(mockData)
+        viewModel.setLiveDataValue(mockData)
 
         viewModel.sortByRecent()
 
@@ -59,7 +59,7 @@ class NewsViewModelTest {
     @Test
     fun `test sortByPopular() method`() {
         val mockData = getMockNewsItemData()
-        viewModel.newsLiveData.postValue(mockData)
+        viewModel.setLiveDataValue(mockData)
 
         viewModel.sortByPopular()
 
