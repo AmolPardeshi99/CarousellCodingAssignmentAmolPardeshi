@@ -43,7 +43,7 @@ This app uses [MVVM (Model View View-Model)](https://developer.android.com/jetpa
 
 # Let's See
  
- <img src="https://github.com/AmolPardeshi99/SpaceXRockets/blob/master/Assets/spacex_demo_amol_pardeshi.gif" width="400" height="850">
+ <img src="https://github.com/AmolPardeshi99/SpaceXRockets/blob/master/Assets/spacex_demo_amol_pardeshi.gif" width="300" height="750">
  
  ## Event
  
