@@ -3,6 +3,7 @@ package com.example.amolpardeshi_standardarchitecuture.ui
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,10 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initUI()
-
         (application as NewsApp).applicationComponent.inject(this)
         newsViewModel = ViewModelProvider(this, viewModelFactory)[NewsViewModel::class.java]
+
+        initUI()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
