@@ -1,4 +1,4 @@
-# Carousell News App 🤩🔥
+# :newspaper: Carousell News App 🤩🔥
 
 Carousell News is Android App for showing News. The objective of the repository is to demonstrate the:
 
