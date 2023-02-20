@@ -40,7 +40,33 @@ This app uses [MVVM (Model View View-Model)](https://developer.android.com/jetpa
 <img src="https://camo.githubusercontent.com/be9b0e8eb62e13a031031fb16e99f33c647da47908a21f451cb00d2c99fb9b31/68747470733a2f2f646576656c6f7065722e616e64726f69642e636f6d2f746f7069632f6c69627261726965732f6172636869746563747572652f696d616765732f66696e616c2d6172636869746563747572652e706e67">
 
 
-# Clone this Repo To Your System Using Android Studio✨
+
+# Let's See
+ 
+ <img src="https://github.com/AmolPardeshi99/SpaceXRockets/blob/master/Assets/spacex_demo_amol_pardeshi.gif">
+ 
+ ## Event
+ 
+ <img src="">
+ 
+ ## Task
+ 
+ <img src="">
+ 
+ ## Goal
+ 
+ <img src="">
+ 
+ ## Settings
+ 
+ <img src="">
+ 
+ ## Feature of Custom Calendar
+ 
+ <img src="">
+ 
+ 
+ # Clone this Repo To Your System Using Android Studio✨
 
 * Step 1: Open your Android Studio then go to the File > New > Project from Version Control as shown in the below image.
 * Step 2: After clicking on the Project from Version Control a pop-up screen will arise like below. In the Version control choose Git from the drop-down menu.
@@ -68,29 +94,6 @@ Congratulations, you have created your local clone from your remote Github repos
 
 Open Android Studio. Go to File > New > Project From Version Control. Copy the link of this repositary. Paste the link in Url Box of Android Studio window and click on "Clone" button.
 
-# Let's See
- 
- ![]("https://github.com/AmolPardeshi99/SpaceXRockets/blob/master/Assets/spacex_demo_amol_pardeshi.gif")
- 
- ## Event
- 
- <img src="">
- 
- ## Task
- 
- <img src="">
- 
- ## Goal
- 
- <img src="">
- 
- ## Settings
- 
- <img src="">
- 
- ## Feature of Custom Calendar
- 
- <img src="">
 
 
 
