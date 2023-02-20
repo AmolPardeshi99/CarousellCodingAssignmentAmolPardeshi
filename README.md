@@ -43,27 +43,21 @@ This app uses [MVVM (Model View View-Model)](https://developer.android.com/jetpa
 
 # Let's See
  
- <img src="https://github.com/AmolPardeshi99/SpaceXRockets/blob/master/Assets/spacex_demo_amol_pardeshi.gif" width="300" height="750">
+ <img src="https://github.com/AmolPardeshi99/CarousellCodingAssignmentAmolPardeshi/blob/master/Assets/carousell_news_app_demo.gif" width="300" height="750">
  
- ## Event
+ ## Home Page
  
- <img src="">
+<img src="https://github.com/AmolPardeshi99/CarousellCodingAssignmentAmolPardeshi/blob/master/Assets/news_home_page.png" width="300" height="750">
  
- ## Task
+ ## Menu - Sorting Options
  
- <img src="">
+<img src="https://github.com/AmolPardeshi99/CarousellCodingAssignmentAmolPardeshi/blob/master/Assets/menu_options.png" width="300" height="750">
  
- ## Goal
+ ## Sorted According to Recents
  
- <img src="">
- 
- ## Settings
- 
- <img src="">
- 
- ## Feature of Custom Calendar
- 
- <img src="">
+<img src="https://github.com/AmolPardeshi99/CarousellCodingAssignmentAmolPardeshi/blob/master/Assets/news_sorted_recent.png" width="300" height="750">
+
+
  
  
  # Clone this Repo To Your System Using Android Studio✨
