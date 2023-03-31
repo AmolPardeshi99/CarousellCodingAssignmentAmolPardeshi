@@ -8,7 +8,7 @@ Carousell News is Android App for showing News. The objective of the repository 
 * Coroutines and Livedata
 * Standard Coding practices  
 * Dependency using Dagger-2
-* Unit Testing
+* Unit Testing using J-unit-4 and mockito
 
 
 # Links for Demo
