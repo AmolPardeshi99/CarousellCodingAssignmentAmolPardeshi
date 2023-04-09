@@ -25,7 +25,7 @@ https://drive.google.com/file/d/1IZtEPthLrcoO90j_lOyw5qYLkg0gHdyI/view?usp=share
 * Room DataBase
 * Coroutines
 * Dagger2
-* Unit test using J-Unit4
+* Unit test using J-Unit 4
 * [News API]("https://storage.googleapis.com/carousell-interview-assets/android/carousell_news.json")
 
 # Tech Stack ✨
